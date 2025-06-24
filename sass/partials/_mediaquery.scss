@@ -1,0 +1,69 @@
+// Dispositivos escritorio
+@use "variables" as*;
+
+@media (min-width: 600px) {
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.icon-bootstrap {
+    display: none;
+}
+.icon-toggle {
+    display: none;
+}
+.links-nav {
+    background-color:rgba(0, 0, 0, 0.575);
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+}
+.link-nav {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.main-section {
+    margin: 0 auto;
+    width: min(100%, $ancho-maximo);
+    display: flex;
+    justify-content: space-around;
+}
+.main-article {
+    text-align: center;
+    width: 45%;
+}
+.main-subtittle {
+}
+.main-subtittle-h3 {
+    color: white;
+}
+.main-text {
+    color: white;
+    margin: 15px 0;
+}
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn {
+    background-color: #8c1390;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px 15px;
+    color: white;
+}
+.main-img {
+    width: 40%;
+    display: block;
+}
+}

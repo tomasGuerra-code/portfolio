@@ -1,0 +1,53 @@
+/* NAVBAR */
+
+@use "variables" as*;
+.header {
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: min(100%, $ancho-maximo);
+    padding: 0 $padding-horizontales;
+}
+.icon-bootstrap {
+    font-size: 45px;
+    color: black;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+}
+.icon-toggle {
+    display: none;
+}
+.icon-toggle:checked ~ .links-nav {
+    height: 100vh;
+}
+.links-nav {
+    background-color:#000000ad;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    transition: height .3s ease;
+    backdrop-filter: blur(5px);
+}
+.link-nav {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
