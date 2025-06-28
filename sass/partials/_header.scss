@@ -6,7 +6,7 @@
     position: relative;
 }
 .navbar {
-    height: 100%;
+    height: 70px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -14,19 +14,22 @@
     flex-wrap: wrap;
     width: min(100%, $ancho-maximo);
     padding: 0 $padding-horizontales;
+    h1 {
+        font-size: 1rem 2vh 2.6rem; // clamp
+    }
 }
 .icon-bootstrap {
-    font-size: 45px;
+    font-size: 35px;
     color: black;
     position: fixed;
     z-index: 10;
-    top: 20px;
+    top: 9px;
     right: 20px;
 }
 .icon-toggle {
     display: none;
 }
-.icon-toggle:checked ~ .links-nav {
+.icon-toggle:checked + .links-nav {
     height: 100vh;
 }
 .links-nav {
@@ -42,7 +45,7 @@
     align-items: center;
     justify-content:center;
     gap: 20px;
-    transition: height .3s ease;
+    transition: height .4s ease;
     backdrop-filter: blur(5px);
 }
 .link-nav {
