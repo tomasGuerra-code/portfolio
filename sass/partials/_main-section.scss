@@ -3,12 +3,14 @@
 .main-section {
     margin: 0 auto;
     width: min(100%, $ancho-maximo);
+    padding: 100px 20px;
 }
 .main-article {
     text-align: center;
 }
-.main-subtittle {
-}
+// .main-subtittle {
+//     font-size: clamp (1.2rem, 5.6vh, 2rem);
+//}
 .main-subtittle-h3 {
     color: white;
 }
